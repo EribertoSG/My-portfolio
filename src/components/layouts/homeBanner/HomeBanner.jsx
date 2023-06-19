@@ -1,8 +1,12 @@
 import React from 'react'
-import styles from './homeBanner.module.css'
 import Link from 'next/link'
+import styles from './homeBanner.module.css'
+import Text from '@/components/atoms/Text'
+import WritingEffect from '@/components/atoms/WritingEffect'
 
 const HomeBanner = () => {
+    const myDescription = `I am a programmer and front-end developer with experience in developing attractive and easy-to-use websites and web applications. I offer reliable and experienced services to help you create an impressive online presence. I look forward to working with you to bring your project to life.`
+
     return (
         <section className={styles.homeBanner}>
             <div className={styles.homeBanner__container}>
@@ -29,9 +33,8 @@ const HomeBanner = () => {
                 </div>
                 <div className={styles.homeBanner__content}>
                     <div className={styles.nameAndDescription}>
-                        <h1 className={styles.name}>Hi!, I´m Eriberto Santos</h1>
-                        <p className={styles.description}>I am a programmer and front-end developer with experience in developing attractive and easy-to-use websites and web applications.
-                            I offer reliable and experienced services to help you create an impressive online presence. I look forward to working with you to bring your project to life.</p>
+                        <WritingEffect styles={styles} />
+                        <Text style={styles.description} text={myDescription} />
                     </div>
                     <div className={styles.techIcon}>
                         <h1>iconos</h1>

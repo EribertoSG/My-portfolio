@@ -34,10 +34,39 @@
 .twitter {
     fill: #E2E2E2;
     margin-bottom: .5rem;
+    transition: transform 0.50s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.github:hover {
+    fill: #fff;
+}
+
+.linkedin:hover {
+    fill: #0077B5;
+}
+
+.instagram:hover {
+    fill: #C13584;
+}
+
+.facebook:hover {
+    fill: #1877F2;
+}
+
+.github:hover,
+.linkedin:hover,
+.instagram:hover,
+.facebook:hover,
+.twitter:hover {
+    transform: scale(1.2);
 }
 
 .twitter {
     margin: 0;
+}
+
+.twitter:hover {
+    fill: #1DA1F2;
 }
 
 .lineOne,
@@ -61,25 +90,51 @@
 
 
 .homeBanner__content {
-    /* background-color: rgb(16, 148, 38); */
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 470px;
     grid-template-rows: 1fr;
     grid-gap: 1rem;
 }
 
 .nameAndDescription {
-    background-color: red;
-    margin-left: 3.5rem;
+    margin: 3rem 0 0 3.5rem;
 }
 
 .name {
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 2em;
+    margin-bottom: 2.25rem;
+    line-height: 4.3125rem;
+    min-height: 9.25rem;
+}
+
+.textColor {
+    color: #35A4F2;
+}
+
+@keyframes expand {
+    0% {
+        transform: scaleY(0.1);
+    }
+
+    50% {
+        transform: scaleY(1);
+    }
+
+    100% {
+        transform: scaleY(0.1);
+    }
+}
+
+.type::after {
+    content: '|';
+    display: inline-block;
+    animation: expand 1s infinite cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .description {
     font-weight: 400;
+    line-height: 1.5rem;
 }
 
 .techIcon {
