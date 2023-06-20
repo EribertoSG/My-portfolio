@@ -1,5 +1,4 @@
 import '@/styles/main.css'
-import '@/styles/layout.css'
 import Navigation from '@/components/organisms/Navigation/Navigation'
 import { Poppins } from 'next/font/google'
 

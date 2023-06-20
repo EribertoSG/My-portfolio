@@ -3,7 +3,8 @@
     min-height: 100vh;
     width: 100%;
     color: #fff;
-    font-family: var(--poppins);
+    max-width: 1250px;
+    margin: 0 auto;
 }
 
 .homeBanner__container {
@@ -92,9 +93,9 @@
 
 .homeBanner__content {
     display: grid;
-    grid-template-columns: 1fr 470px;
+    grid-template-columns: 1fr 42%;
     grid-template-rows: 1fr;
-    grid-gap: 1rem;
+    grid-gap: 2rem;
 }
 
 .nameAndDescription {
