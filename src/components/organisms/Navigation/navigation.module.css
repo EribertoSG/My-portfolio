@@ -35,6 +35,14 @@
     color: #E2E2E2;
 }
 
+.item:last-child {
+    display: flex;
+    align-items: center;
+}
+
+.chevronDown {
+    fill: #E2E2E2;
+}
 
 .buttonResume {
     padding: 0.5rem 1rem;

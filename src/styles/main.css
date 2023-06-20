@@ -8,10 +8,38 @@ body {
     min-height: 100vh;
 }
 
-h1,h2, h3,h4, p{
+h1,
+h2,
+h3,
+h4,
+p {
     margin: 0;
 }
 
-a{
+a {
     text-decoration: none;
+}
+
+
+/* --------------------------------- Scroll --------------------------------- */
+/* Establece el estilo para el scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Establece el estilo para el track (la pista de desplazamiento) */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Establece el estilo para la handle (la barra de desplazamiento) */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    transition: background .5s ease;
+    border-radius: 1rem;
+}
+
+/* Cambia el color de la barra de desplazamiento en hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
