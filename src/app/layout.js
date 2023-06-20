@@ -3,7 +3,8 @@ import '@/styles/layout.css'
 import Navigation from '@/components/organisms/Navigation/Navigation'
 import { Poppins } from 'next/font/google'
 
-const poppins = Poppins({ weight: ['400', '700'], subsets: ['latin'], variable: '--poppins' })
+
+const poppins = Poppins({ weight: ['400', '700'], subsets: ['latin']})
 
 export const metadata = {
   title: 'Eriberto-SG',
@@ -13,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={poppins.variable}>
+      <body className={poppins.className}>
         <Navigation />
           {children}
       </body>

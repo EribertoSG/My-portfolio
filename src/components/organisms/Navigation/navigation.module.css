@@ -6,6 +6,9 @@
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 100;
+    /* backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.3); */
 }
 
 .headerContainer {
@@ -36,12 +39,11 @@
 .cv {}
 
 .buttonResume {
-    padding: 0.75rem 1rem;
+    padding: 0.5rem 1rem;
     background-color: transparent;
     border-radius: 0.25rem;
     border-width: 1.50px;
     border-style: solid;
     border-color: #2E7CF2;
     color: #E2E2E2;
-
 }

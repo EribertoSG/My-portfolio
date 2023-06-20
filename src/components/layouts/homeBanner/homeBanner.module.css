@@ -10,6 +10,7 @@
     padding-top: 6rem;
     height: 100vh;
     display: flex;
+    z-index: 1;
 }
 
 .socialNetworks {
@@ -100,12 +101,15 @@
     margin: 3rem 0 0 3.5rem;
 }
 
+.nameContainer {
+    margin-bottom: 2.25rem;
+    min-height: 9.25rem;
+}
+
 .name {
     font-weight: 700;
-    font-size: 2em;
-    margin-bottom: 2.25rem;
+    font-size: 4em;
     line-height: 4.3125rem;
-    min-height: 9.25rem;
 }
 
 .textColor {
@@ -126,6 +130,13 @@
     }
 }
 
+.type {
+    margin-left: 0.5rem;
+    font-size: inherit;
+    font-weight: inherit;
+    color: #35A4F2;
+}
+
 .type::after {
     content: '|';
     display: inline-block;
@@ -138,5 +149,200 @@
 }
 
 .techIcon {
-    /* background-color: rgb(255, 0, 221); */
+    grid-column-start: 2;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    justify-content: center;
+    align-tracks: center;
+    margin: 3rem 0;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-12px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+@keyframes floatTwo {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(10px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+@keyframes zoomOut {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1) rotate(5deg);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.90) rotate(-5deg);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.circleContainerSass,
+.circleContainerGit,
+.circleContainerReact,
+.circleContainerJs,
+.circleContainerCSS,
+.circleContainerNext,
+.circleContainerHTML {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: float 6s ease-in-out infinite;
+}
+
+.circleContainerGit,
+.circleContainerNext {
+    animation: floatTwo 3s ease-in-out infinite;
+}
+
+.circleContainerReact {
+    animation: zoomOut 3s ease-in-out infinite;
+}
+.circleContainerCSS{
+    animation: zoomIn 2s ease-in-out infinite;
+}
+.circleContainerSass {
+    grid-row-start: 1;
+}
+
+.circleContainerGit {
+    grid-row-start: 5;
+    grid-column-start: 1;
+    width: 45px;
+    height: 45px
+}
+
+.circleContainerReact {
+    grid-row-start: 4;
+    grid-column-start: 4;
+}
+
+.circleContainerJs {
+    grid-row-start: 7;
+    grid-column-start: 3;
+}
+
+.circleContainerCSS {
+    grid-column-start: 4;
+}
+
+.circleContainerNext {
+    grid-row-start: 2;
+    grid-column-start: 7;
+}
+
+.circleContainerHTML {
+    grid-row-start: 5;
+    grid-column-start: 7;
+    width: 45px;
+    height: 45px
+}
+
+
+.blurCircleSass,
+.blurCircleGit,
+.blurCircleReact,
+.blurCircleJs,
+.blurCircleCSS,
+.blurCircleNext,
+.blurCircleHTML {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: blur(30px);
+    z-index: 1;
+    opacity: .8;
+    border-radius: 50%;
+}
+
+.blurCircleSass {
+    background-color: #F06292;
+    box-shadow: 0 0 0 5px #F06292;
+}
+
+.blurCircleGit {
+    background-color: #F07852;
+    box-shadow: 0 0 0 5px #F07852;
+}
+
+.blurCircleReact {
+    background-color: #61DAFB;
+    box-shadow: 0 0 0 5px #61DAFB;
+}
+
+.blurCircleJs {
+    background-color: #FFD600;
+    box-shadow: 0 0 0 5px #FFD600;
+}
+
+.blurCircleCSS {
+    background-color: #1192EE;
+    box-shadow: 0 0 0 5px #1192EE;
+}
+
+.blurCircleNext {
+    background-color: #E4EEF5;
+    box-shadow: 0 0 0 5px #E4EEF5;
+}
+
+.blurCircleHTML {
+    background-color: #FF976A;
+    box-shadow: 0 0 0 5px #FF976A;
+}
+
+.circleContent {
+    position: relative;
+    z-index: 2;
+}
+
+.background {
+    position: absolute;
+    top: 100px;
+    left: 38%;
+    width: 150px;
+    height: 150px;
+    background-color: #1877F2;
+    border-radius: 50%;
+    box-shadow: 0 0 15px 2px #1877F2;
+    filter: blur(100px);
+    z-index: 1;
 }
