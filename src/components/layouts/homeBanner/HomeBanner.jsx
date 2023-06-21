@@ -1,10 +1,15 @@
+'use client'
 import React from 'react'
-import Link from 'next/link'
 import styles from './homeBanner.module.css'
 import Text from '@/components/atoms/Text'
 import WritingEffect from '@/components/atoms/WritingEffect'
+import useMediaQuery from '@/hooks/useResponsive'
+import { BREAKPOINTS } from '@/constants/ breakpoints'
+import SocialNetworks from '@/components/atoms/SocialNetworks'
 
 const HomeBanner = () => {
+    const isScreenSmall = useMediaQuery(`(max-width: ${BREAKPOINTS.sm}px)`)
+
     const myDescription = `I am a programmer and front-end developer with experience in developing attractive and easy-to-use websites and web applications. I offer reliable and experienced services to help you create an impressive online presence. I look forward to working with you to bring your project to life.`
 
     const socialMediaList = [{
@@ -43,15 +48,6 @@ const HomeBanner = () => {
         <section className={styles.homeBanner}>
             <div className={styles.background}></div>
             <div className={styles.homeBanner__container}>
-                <div className={styles.socialNetworks}>
-                    <div className={styles.lineOne}></div>
-                    <div className={styles.socialNetworks__content}>
-                        {socialMediaList.map(element => (
-                            <Link href={element.link} key={element.id} target={element.target}>{element.svg}</Link>
-                        ))}
-                    </div>
-                    <div className={styles.lineTwo}></div>
-                </div>
                 <div className={styles.homeBanner__content}>
                     <div className={styles.nameAndDescription}>
                         <WritingEffect styles={styles} />
@@ -78,11 +74,11 @@ const HomeBanner = () => {
                             <div className={styles.blurCircleReact} />
                             <div className={styles.circleContent}>
                                 <svg width="113" height="98" viewBox="0 0 113 98" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_206_34)">
+                                    <g clipPath="url(#clip0_206_34)">
                                         <path d="M56.4999 59.0699C61.9738 59.0699 66.4112 54.7191 66.4112 49.3521C66.4112 43.9852 61.9738 39.6344 56.4999 39.6344C51.0261 39.6344 46.5886 43.9852 46.5886 49.3521C46.5886 54.7191 51.0261 59.0699 56.4999 59.0699Z" fill="#61DAFB" />
-                                        <path d="M56.5 69.2616C85.8719 69.2616 109.683 60.3479 109.683 49.3521C109.683 38.3564 85.8719 29.4426 56.5 29.4426C27.128 29.4426 3.31738 38.3564 3.31738 49.3521C3.31738 60.3479 27.128 69.2616 56.5 69.2616Z" stroke="#61DAFB" stroke-width="1.5" />
-                                        <path d="M38.9145 59.3069C53.6005 84.2469 73.3792 100.008 83.0914 94.5101C92.8037 89.0123 88.7717 64.3374 74.0857 39.3974C59.3997 14.4573 39.6211 -1.30372 29.9088 4.19413C20.1965 9.69199 24.2285 34.3668 38.9145 59.3069Z" stroke="#61DAFB" stroke-width="1.5" />
-                                        <path d="M38.9143 39.3974C24.2283 64.3374 20.1963 89.0123 29.9086 94.5101C39.6208 100.008 59.3995 84.247 74.0855 59.3069C88.7714 34.3668 92.8034 9.692 83.0912 4.19414C73.3789 -1.30372 53.6003 14.4573 38.9143 39.3974Z" stroke="#61DAFB" stroke-width="1.5" />
+                                        <path d="M56.5 69.2616C85.8719 69.2616 109.683 60.3479 109.683 49.3521C109.683 38.3564 85.8719 29.4426 56.5 29.4426C27.128 29.4426 3.31738 38.3564 3.31738 49.3521C3.31738 60.3479 27.128 69.2616 56.5 69.2616Z" stroke="#61DAFB" strokeWidth="1.5" />
+                                        <path d="M38.9145 59.3069C53.6005 84.2469 73.3792 100.008 83.0914 94.5101C92.8037 89.0123 88.7717 64.3374 74.0857 39.3974C59.3997 14.4573 39.6211 -1.30372 29.9088 4.19413C20.1965 9.69199 24.2285 34.3668 38.9145 59.3069Z" stroke="#61DAFB" strokeWidth="1.5" />
+                                        <path d="M38.9143 39.3974C24.2283 64.3374 20.1963 89.0123 29.9086 94.5101C39.6208 100.008 59.3995 84.247 74.0855 59.3069C88.7714 34.3668 92.8034 9.692 83.0912 4.19414C73.3789 -1.30372 53.6003 14.4573 38.9143 39.3974Z" stroke="#61DAFB" strokeWidth="1.5" />
                                     </g>
                                     <defs>
                                         <clipPath id="clip0_206_34">
@@ -97,8 +93,8 @@ const HomeBanner = () => {
                             <div className={styles.circleContent}>
                                 <svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M8.7998 55.5667V8.16666H56.1998V55.5667H8.7998Z" fill="#FFD600" />
-                                    <path d="M32.2143 29.6968V42.6251C32.2143 47.5811 26.4473 47.9208 23.9417 43.6811" stroke="#000001" stroke-width="3.3" stroke-miterlimit="10" />
-                                    <path d="M46.575 33.635C44.2854 30.0444 39.1043 30.5474 38.8857 34.3697C38.6039 39.3164 47.7969 38.238 47.1109 43.7272C46.6303 47.5719 40.6935 48.8069 37.6401 43.6416" stroke="#000001" stroke-width="3.3" stroke-miterlimit="10" />
+                                    <path d="M32.2143 29.6968V42.6251C32.2143 47.5811 26.4473 47.9208 23.9417 43.6811" stroke="#000001" strokeWidth="3.3" strokeMiterlimit="10" />
+                                    <path d="M46.575 33.635C44.2854 30.0444 39.1043 30.5474 38.8857 34.3697C38.6039 39.3164 47.7969 38.238 47.1109 43.7272C46.6303 47.5719 40.6935 48.8069 37.6401 43.6416" stroke="#000001" strokeWidth="3.3" strokeMiterlimit="10" />
                                 </svg>
                             </div>
                         </div>
@@ -114,8 +110,8 @@ const HomeBanner = () => {
                                     <path opacity="0.07" d="M33.1 13L32.6 21L31.9 32.5L24 35.1L16.1 32.5L15.8 27H19.8L19.9 29.5L24 30.9L28.1 29.5L28.4 25H24H19.6L19.4 21H24H28.6L28.9 17H24H15.1L14.8 13H24H33.1ZM33.632 12.5H33.1H24H14.8H14.261L14.301 13.037L14.601 17.037L14.636 17.5H15.1H24H28.361L28.136 20.5H24H19.4H18.874L18.9 21.025L19.1 25.025L19.124 25.5H19.6H24H27.866L27.624 29.134L24 30.372L20.386 29.138L20.3 26.98L20.28 26.5H19.8H15.8H15.272L15.301 27.027L15.601 32.527L15.62 32.868L15.944 32.975L23.844 35.575L24 35.626L24.156 35.575L32.056 32.975L32.378 32.869L32.399 32.53L33.099 21.03L33.599 13.031L33.632 12.5Z" fill="black" />
                                     <defs>
                                         <linearGradient id="paint0_linear_206_48" x1="16.33" y1="-2.748" x2="32.293" y2="41.109" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#2AA4F4" />
-                                            <stop offset="1" stop-color="#007AD9" />
+                                            <stop stopColor="#2AA4F4" />
+                                            <stop offset="1" stopColor="#007AD9" />
                                         </linearGradient>
                                     </defs>
                                 </svg>
@@ -125,7 +121,7 @@ const HomeBanner = () => {
                             <div className={styles.blurCircleNext} />
                             <div className={styles.circleContent}>
                                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_206_57)">
+                                    <g clipPath="url(#clip0_206_57)">
                                         <path d="M22.4299 0.0375022C22.3268 0.0468762 21.9987 0.0796855 21.7034 0.103121C14.8932 0.717123 8.51411 4.39177 4.47388 10.0397C2.2241 13.18 0.78518 16.7421 0.241483 20.5152C0.0493141 21.8322 0.0258789 22.2213 0.0258789 24.007C0.0258789 25.7928 0.0493141 26.1818 0.241483 27.4989C1.54448 36.5027 7.95167 44.0676 16.6414 46.8704C18.1975 47.3719 19.838 47.7141 21.7034 47.9203C22.4299 48 25.5703 48 26.2968 47.9203C29.5167 47.5641 32.2446 46.7673 34.935 45.394C35.3474 45.1831 35.4271 45.1269 35.3709 45.08C35.3334 45.0519 33.5757 42.6943 31.4666 39.8446L27.6326 34.6654L22.8283 27.5551C20.1848 23.6461 18.0101 20.4496 17.9913 20.4496C17.9726 20.4449 17.9538 23.604 17.9444 27.4614C17.9304 34.2154 17.9257 34.4873 17.8413 34.6466C17.7195 34.8763 17.6257 34.97 17.4289 35.0731C17.2789 35.1481 17.1476 35.1622 16.4399 35.1622H15.629L15.4134 35.0263C15.2728 34.9372 15.1697 34.82 15.0994 34.6841L15.001 34.4732L15.0104 25.0757L15.0244 15.6735L15.1697 15.4907C15.2447 15.3923 15.4041 15.2657 15.5166 15.2048C15.7087 15.111 15.7837 15.1017 16.5946 15.1017C17.5507 15.1017 17.7101 15.1392 17.9585 15.411C18.0288 15.486 20.6301 19.4044 23.7423 24.1242C26.8545 28.8441 31.1103 35.2887 33.2008 38.4525L36.9973 44.2035L37.1894 44.077C38.8908 42.9708 40.6907 41.396 42.1155 39.7555C45.148 36.273 47.1025 32.0266 47.7587 27.4989C47.9509 26.1818 47.9743 25.7928 47.9743 24.007C47.9743 22.2213 47.9509 21.8322 47.7587 20.5152C46.4557 11.5114 40.0485 3.9465 31.3588 1.14364C29.8261 0.646818 28.195 0.304664 26.3671 0.0984337C25.9171 0.0515633 22.819 5.82263e-06 22.4299 0.0375022ZM32.2446 14.5392C32.4696 14.6517 32.6524 14.8673 32.718 15.0923C32.7555 15.2141 32.7649 17.8201 32.7555 23.693L32.7414 32.1203L31.2556 29.8424L29.7652 27.5645V21.4385C29.7652 17.478 29.7839 15.2516 29.812 15.1438C29.887 14.8814 30.0511 14.6751 30.2761 14.5533C30.4682 14.4548 30.5385 14.4455 31.2744 14.4455C31.9681 14.4455 32.0899 14.4548 32.2446 14.5392Z" fill="black" />
                                         <path d="M36.7629 44.3066C36.5989 44.4097 36.5473 44.48 36.6926 44.4004C36.7957 44.3394 36.9645 44.2129 36.9363 44.2082C36.9223 44.2082 36.8426 44.2551 36.7629 44.3066ZM36.4395 44.5175C36.3551 44.5832 36.3551 44.5878 36.4582 44.5363C36.5145 44.5082 36.5614 44.4754 36.5614 44.466C36.5614 44.4285 36.5379 44.4379 36.4395 44.5175ZM36.2052 44.6581C36.1208 44.7238 36.1208 44.7285 36.2239 44.6769C36.2801 44.6488 36.327 44.616 36.327 44.6066C36.327 44.5691 36.3036 44.5785 36.2052 44.6581ZM35.9708 44.7988C35.8864 44.8644 35.8864 44.8691 35.9895 44.8175C36.0458 44.7894 36.0927 44.7566 36.0927 44.7472C36.0927 44.7097 36.0692 44.7191 35.9708 44.7988ZM35.6146 44.9862C35.4365 45.08 35.4458 45.1175 35.624 45.0284C35.7036 44.9862 35.7646 44.9441 35.7646 44.9347C35.7646 44.9019 35.7599 44.9066 35.6146 44.9862Z" fill="black" />
                                     </g>
@@ -141,7 +137,7 @@ const HomeBanner = () => {
                             <div className={styles.blurCircleHTML} />
                             <div className={styles.circleContent}>
                                 <svg width="34" height="39" viewBox="0 0 34 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_206_28)">
+                                    <g clipPath="url(#clip0_206_28)">
                                         <path d="M2.84695 34.9148L0 0.065155L34 0.135187L30.9896 34.9148L17.1283 38.9349L2.84695 34.9148Z" fill="#E34F26" />
                                         <path d="M17.1284 35.5692V3.38412L31.1298 3.43081L28.633 32.2266L17.1284 35.5692Z" fill="#EF652A" />
                                         <path d="M27.2794 11.4246L27.6759 7.1705H6.13721L7.32721 20.2129H22.1921L21.6091 25.7757L16.8486 27.061L12.0181 25.6587L11.7615 22.3397H7.49063L8.07411 29.118L16.8483 31.5721L25.6924 29.118L26.8824 15.8888H11.2712L10.8278 11.4246H27.2794Z" fill="white" />
@@ -157,6 +153,7 @@ const HomeBanner = () => {
                         </div>
                     </div>
                 </div>
+                <SocialNetworks styles={styles} socialMediaList={socialMediaList} />
             </div>
         </section>
     )

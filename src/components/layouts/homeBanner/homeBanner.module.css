@@ -5,6 +5,10 @@
     color: #fff;
     max-width: 1250px;
     margin: 0 auto;
+
+    @media screen and (max-width: 576px) {
+        max-width: 90%;
+    }
 }
 
 .homeBanner__container {
@@ -12,6 +16,11 @@
     height: 100vh;
     display: flex;
     z-index: 1;
+    flex-direction: row-reverse;
+
+    @media screen and (max-width: 576px) {
+        flex-direction: column;
+    }
 }
 
 .socialNetworks {
@@ -20,6 +29,12 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+
+    @media screen and (max-width: 576px) {
+        flex-direction: row;
+        gap: 0.5rem;
+        padding: 0.5rem 0;
+    }
 }
 
 .socialNetworks__content {
@@ -27,6 +42,12 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+
+    @media screen and (max-width: 576px) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
 .github,
@@ -37,6 +58,10 @@
     fill: #E2E2E2;
     margin-bottom: .5rem;
     transition: transform 0.50s cubic-bezier(0.075, 0.82, 0.165, 1);
+    @media screen and (max-width: 576px) {
+        margin-right: 0.5rem;
+        margin-bottom: 0;
+    }
 }
 
 .github:hover {
@@ -78,39 +103,69 @@
     margin-left: 16px;
     margin-right: 16px;
 
+    @media screen and (max-width: 576px) {
+        width: 100%;
+        height: 2px;
+    }
 }
 
 .lineOne {
     margin-bottom: 16px;
     background: linear-gradient(-45deg, #35A4F2, #100F16 90%);
+
+    @media screen and (max-width: 576px) {
+        margin: 0;
+    }
 }
 
 .lineTwo {
     margin-top: 16px;
     background: linear-gradient(-45deg, #100F16 10%, #35A4F2);
+
+    @media screen and (max-width: 576px) {
+        margin: 0;
+    }
 }
 
 
 .homeBanner__content {
-    display: grid;
-    grid-template-columns: 1fr 42%;
-    grid-template-rows: 1fr;
-    grid-gap: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 576px) {
+        display: grid;
+        grid-gap: 2rem;
+        grid-template-columns: 1fr 42%;
+        grid-template-rows: 1fr;
+    }
 }
 
 .nameAndDescription {
     margin: 3rem 0 0 3.5rem;
+
+    @media screen and (max-width:576px) {
+        margin: 0;
+    }
 }
 
 .nameContainer {
     margin-bottom: 2.25rem;
     min-height: 9.25rem;
+    @media screen and (max-width:576px) {
+        min-height:  10.50rem;
+        margin-bottom: 1.50rem;
+    }
 }
 
 .name {
     font-weight: 700;
     font-size: 4em;
     line-height: 4.3125rem;
+
+    @media screen and (max-width:576px) {
+        font-size: 2.7rem;
+        line-height: 3.3125rem;
+    }
 }
 
 .textColor {
@@ -200,6 +255,7 @@
         transform: scale(1);
     }
 }
+
 @keyframes zoomIn {
     0% {
         transform: scale(1);
@@ -238,11 +294,18 @@
 .circleContainerReact {
     animation: zoomOut 3s ease-in-out infinite;
 }
-.circleContainerCSS{
+
+.circleContainerCSS {
     animation: zoomIn 2s ease-in-out infinite;
 }
+
 .circleContainerSass {
     grid-row-start: 1;
+
+    @media screen and (max-width: 576px) {
+        grid-row-start: 2;
+        grid-column-start: 2;
+    }
 }
 
 .circleContainerGit {
