@@ -58,6 +58,7 @@
     fill: #E2E2E2;
     margin-bottom: .5rem;
     transition: transform 0.50s cubic-bezier(0.075, 0.82, 0.165, 1);
+
     @media screen and (max-width: 576px) {
         margin-right: 0.5rem;
         margin-bottom: 0;
@@ -151,8 +152,9 @@
 .nameContainer {
     margin-bottom: 2.25rem;
     min-height: 9.25rem;
+
     @media screen and (max-width:576px) {
-        min-height:  10.50rem;
+        min-height: 10.50rem;
         margin-bottom: 1.50rem;
     }
 }
@@ -276,7 +278,8 @@
 .circleContainerJs,
 .circleContainerCSS,
 .circleContainerNext,
-.circleContainerHTML {
+.circleContainerHTML,
+.circleContainerLinux {
     position: relative;
     width: 60px;
     height: 60px;
@@ -286,17 +289,10 @@
     animation: float 6s ease-in-out infinite;
 }
 
+/*#26e07f*/
 .circleContainerGit,
 .circleContainerNext {
     animation: floatTwo 3s ease-in-out infinite;
-}
-
-.circleContainerReact {
-    animation: zoomOut 3s ease-in-out infinite;
-}
-
-.circleContainerCSS {
-    animation: zoomIn 2s ease-in-out infinite;
 }
 
 .circleContainerSass {
@@ -318,6 +314,7 @@
 .circleContainerReact {
     grid-row-start: 4;
     grid-column-start: 4;
+    animation: zoomOut 3s ease-in-out infinite;
 }
 
 .circleContainerJs {
@@ -327,6 +324,7 @@
 
 .circleContainerCSS {
     grid-column-start: 4;
+    animation: zoomIn 2s ease-in-out infinite;
 }
 
 .circleContainerNext {
@@ -341,6 +339,11 @@
     height: 45px
 }
 
+.circleContainerLinux {
+    grid-row-start: 6;
+    grid-column-start: 6;
+    animation: zoomIn 2.5s ease-in-out infinite;
+}
 
 .blurCircleSass,
 .blurCircleGit,
