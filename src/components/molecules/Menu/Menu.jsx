@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
 import styles from '@/components/molecules/Menu/menu.module.css'
 
-const Menu = () => {
+const Menu = ({ isActive }) => {
     return (
-        <div className={styles.navbarContainer}>
+        <div className={`${styles.navbarContainer} ${isActive && styles.active}`}>
             <nav className={styles.navbar}>
                 <Link className={styles.item} href="/projects">Projects</Link>
                 <Link className={styles.item} href="/about">About me</Link>
