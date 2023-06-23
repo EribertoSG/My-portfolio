@@ -3,7 +3,7 @@ import Navigation from '@/components/organisms/Navigation/Navigation'
 import { Poppins } from 'next/font/google'
 
 
-const poppins = Poppins({ weight: ['400', '700'], subsets: ['latin']})
+const poppins = Poppins({ weight: ['400', '700', '800'], subsets: ['latin']})
 
 export const metadata = {
   title: 'Eriberto-SG',

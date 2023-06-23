@@ -340,7 +340,7 @@
 }
 
 .circleContainerLinux {
-    grid-row-start: 6;
+    grid-row-start: 7;
     grid-column-start: 6;
     animation: zoomIn 2.5s ease-in-out infinite;
 }
