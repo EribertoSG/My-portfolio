@@ -7,6 +7,8 @@
     left: 0;
     z-index: 100;
     transition: background-color 1s ease, backdrop-filter 1s ease;
+    background-color: transparent;
+    backdrop-filter: none;
 
     @media screen and (max-width: 576px) {
         height: 3rem;

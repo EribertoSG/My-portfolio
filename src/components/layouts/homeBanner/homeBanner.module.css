@@ -1,133 +1,27 @@
 .homeBanner {
     background-color: transparent;
-    min-height: 100vh;
     width: 100%;
+    min-height: calc(100vh - 6rem);
     color: #fff;
-    max-width: 1250px;
-    margin: 0 auto;
 
     @media screen and (max-width: 576px) {
         max-width: 90%;
+        min-height: calc(100vh - 3rem);
+        margin: 0 auto;
     }
 }
 
 .homeBanner__container {
-    padding-top: 6rem;
-    height: 100vh;
     display: flex;
+    min-height: calc(100vh - 6rem);
     z-index: 1;
     flex-direction: row-reverse;
 
     @media screen and (max-width: 576px) {
         flex-direction: column;
+        min-height: calc(100vh - 3rem);
     }
 }
-
-.socialNetworks {
-    /*   background-color: rgb(36, 36, 202); */
-    display: inline-flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-
-    @media screen and (max-width: 576px) {
-        flex-direction: row;
-        gap: 0.5rem;
-        padding: 0.5rem 0;
-    }
-}
-
-.socialNetworks__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-
-    @media screen and (max-width: 576px) {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
-}
-
-.github,
-.linkedin,
-.instagram,
-.facebook,
-.twitter {
-    fill: #E2E2E2;
-    margin-bottom: .5rem;
-    transition: transform 0.50s cubic-bezier(0.075, 0.82, 0.165, 1);
-
-    @media screen and (max-width: 576px) {
-        margin-right: 0.5rem;
-        margin-bottom: 0;
-    }
-}
-
-.github:hover {
-    fill: #fff;
-}
-
-.linkedin:hover {
-    fill: #0077B5;
-}
-
-.instagram:hover {
-    fill: #C13584;
-}
-
-.facebook:hover {
-    fill: #1877F2;
-}
-
-.github:hover,
-.linkedin:hover,
-.instagram:hover,
-.facebook:hover,
-.twitter:hover {
-    transform: scale(1.2);
-}
-
-.twitter {
-    margin: 0;
-}
-
-.twitter:hover {
-    fill: #1DA1F2;
-}
-
-.lineOne,
-.lineTwo {
-    width: 2px;
-    height: 100%;
-    margin-left: 16px;
-    margin-right: 16px;
-
-    @media screen and (max-width: 576px) {
-        width: 100%;
-        height: 2px;
-    }
-}
-
-.lineOne {
-    margin-bottom: 16px;
-    background: linear-gradient(-45deg, #35A4F2, #100F16 90%);
-
-    @media screen and (max-width: 576px) {
-        margin: 0;
-    }
-}
-
-.lineTwo {
-    margin-top: 16px;
-    background: linear-gradient(-45deg, #100F16 10%, #35A4F2);
-
-    @media screen and (max-width: 576px) {
-        margin: 0;
-    }
-}
-
 
 .homeBanner__content {
     display: flex;
@@ -143,9 +37,10 @@
 
 .nameAndDescription {
     margin: 3rem 0 0 3.5rem;
-
+    display: flex;
+    flex-direction: column;
     @media screen and (max-width:576px) {
-        margin: 0;
+        margin: 1rem 0 0 0;
     }
 }
 
@@ -204,6 +99,7 @@
 .description {
     font-weight: 400;
     line-height: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .techIcon {
@@ -296,7 +192,7 @@
 }
 
 .circleContainerSass {
-    grid-row-start: 1;
+    grid-row-start: 2;
 
     @media screen and (max-width: 576px) {
         grid-row-start: 2;
