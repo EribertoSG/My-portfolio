@@ -18,13 +18,12 @@
         align-self: self-start;
     }
 }
+.button:active {
+    transform: scale(1.2);
+}
 
 @media screen and (min-width: 1024px) {
     .button:hover {
         background-color: #35a4f2;
-    }
-
-    .button:active {
-        transform: scale(1.2);
     }
 }
