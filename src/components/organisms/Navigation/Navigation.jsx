@@ -1,5 +1,6 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import { usePathname } from 'next/navigation'
 import styles from './navigation.module.css'
 import MenuIcon from '@/components/atoms/MenuIcon'
 import useScrollDirection from '@/hooks/useScroll'
@@ -7,10 +8,16 @@ import Menu from '@/components/molecules/Menu/Menu'
 import Link from 'next/link'
 
 const Navigation = () => {
+    const currentRoute = usePathname()
     const [isActive, setIsActive] = useState(false)
+
     const handleMenu = () => {
         setIsActive(!isActive)
     }
+    useEffect(() => {
+        setIsActive(!isActive)
+    }, [currentRoute])
+
 
     const { isAtTop } = useScrollDirection()
 
