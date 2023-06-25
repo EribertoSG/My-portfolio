@@ -1,0 +1,30 @@
+.button {
+    background-color: #3094da;
+    padding: 1rem 5rem;
+    color: #000;
+    border-radius: .25rem;
+    outline: none;
+    border: none;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #e2e2e2;
+    margin-left: 2rem;
+    width: 70%;
+    align-self: center;
+    transition: background-color .2s ease, transform .4s ease;
+
+    @media screen and (min-width: 1024px) {
+        width: 50%;
+        align-self: self-start;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .button:hover {
+        background-color: #35a4f2;
+    }
+
+    .button:active {
+        transform: scale(1.2);
+    }
+}

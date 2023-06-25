@@ -1,0 +1,32 @@
+.sectionProjects {
+    display: grid;
+    min-height: calc(100vh - 3rem);
+    grid-template-columns: repeat(auto-fill, minmax(276px, 1fr));
+    gap: 1.5rem;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 2rem;
+
+    @media (min-width: 1024px) {
+        min-height: calc(100vh - 6rem);
+        padding: 1rem 2rem;
+        max-width: 1250px;
+        margin-left: 2rem;
+        width: 100%;
+        gap: 1.7rem;
+    }
+}
+
+.backgroundProjects {
+    position: absolute;
+    top: 250px;
+    right: 18%;
+    width: 150px;
+    height: 150px;
+    background-color: #1877F2;
+    border-radius: 50%;
+    box-shadow: 0 0 15px 2px #1877F2;
+    filter: blur(100px);
+    z-index: 1;
+}
