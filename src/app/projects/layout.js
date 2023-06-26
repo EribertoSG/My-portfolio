@@ -4,9 +4,11 @@ import SocialNetworks from '@/components/molecules/Social/SocialNetwork'
 
 export default function layout({ children }) {
     return (
-        <section className={styles.sectionProjects}>
+        <section className={styles.projects}>
             <div className={styles.backgroundProjects} />
-            {children}
+            <div className={styles.sectionProjects}>
+                {children}
+            </div>
             <SocialNetworks />
         </section>
     )

@@ -1,6 +1,7 @@
 .card {
     width: 17.25rem;
     max-height: 320px;
+    min-height: 315px;
     background-color: #17161F;
     border-radius: .5rem;
     overflow: hidden;
@@ -13,12 +14,13 @@
     @media screen and (max-width: 576px) {
         width: 100%;
         max-height: 400px;
+        min-height: 350px;
     }
 
 }
 
 .cardHeader {
-    width: 100%;
+    width: 100%; 
     height: 160px;
     overflow: hidden;
 

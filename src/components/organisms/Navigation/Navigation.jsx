@@ -15,9 +15,10 @@ const Navigation = () => {
         setIsActive(!isActive)
     }
     useEffect(() => {
-        setIsActive(!isActive)
+        currentRoute == '/'
+            ? setIsActive(false)
+            : setIsActive(!isActive)
     }, [currentRoute])
-
 
     const { isAtTop } = useScrollDirection()
 

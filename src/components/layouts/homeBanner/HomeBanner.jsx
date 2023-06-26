@@ -1,21 +1,14 @@
-'use client'
 import React from 'react'
 import styles from './homeBanner.module.css'
 import Text from '@/components/atoms/Text'
 import WritingEffect from '@/components/atoms/WritingEffect'
-import useMediaQuery from '@/hooks/useResponsive'
-import { BREAKPOINTS } from '@/constants/ breakpoints'
 import SocialNetworks from '@/components/molecules/Social/SocialNetwork'
 
 import Image from 'next/image'
 import Bottom from '@/components/atoms/bottom/Bottom'
 
 const HomeBanner = () => {
-    const isScreenSmall = useMediaQuery(`(max-width: ${BREAKPOINTS.sm}px)`)
-
     const myDescription = `I am a programmer and front-end developer with experience in developing attractive and easy-to-use websites and web applications. I offer reliable and experienced services to help you create an impressive online presence. I look forward to working with you to bring your project to life.`
-
-
 
     return (
         <section className={styles.homeBanner}>
