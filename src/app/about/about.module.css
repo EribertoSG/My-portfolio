@@ -1,0 +1,98 @@
+.about {
+    position: relative;
+}
+
+.sectionAbout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 90%;
+    margin: 0 auto;
+    gap: 1rem;
+
+    @media screen and (min-width: 768px) {
+        padding: 2rem 2rem 2rem;
+    }
+}
+
+.avatarContainer {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.myName,
+.myDescriptionContent {
+    text-align: center;
+}
+
+.myName {
+    color: #eaf4fb;
+    font-size: 48px;
+    margin-bottom: 1rem;
+}
+
+.myDescriptionContent p {
+    line-height: 24px;
+    color: #d3dce2;
+}
+.myDescriptionContent p:first-child span{
+    color: #35a4f2;
+}
+.myDescriptionContent p:last-child {
+    margin-top: 1rem;
+}
+
+.mySkills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 2rem;
+    justify-content: center;
+}
+
+.backgroundAbout {
+    position: absolute;
+    top: 64px;
+    right: 8%;
+    width: 150px;
+    height: 150px;
+    background-color: #1877F2;
+    border-radius: 50%;
+    box-shadow: 0 0 50px 6px #1877F2;
+    filter: blur(140px);
+    z-index: 1;
+}
+
+@media screen and (min-width: 1024px) {
+    .sectionAbout {
+        flex-direction: row;
+        padding: 0;
+        padding-bottom: 1.5rem;
+        padding-left: 2rem;
+        padding-top: 1.5rem;
+        gap: 2rem;
+    }
+
+    .myName,
+    .myDescriptionContent {
+        text-align: start;
+    }
+
+    .mySkills {
+        justify-content: flex-start;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .sectionAbout {
+        flex-direction: row;
+        padding-left: 2.5rem;
+        gap: 2.5rem;
+    }
+}

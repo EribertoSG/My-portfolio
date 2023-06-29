@@ -1,0 +1,55 @@
+.linkButton {
+    background-color: #3094da;
+    padding: 1rem 1rem;
+    color: #000;
+    border-radius: .25rem;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #eaf4fb;
+    width: 60%;
+    transition: background-color .1s ease, transform .1s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.a {
+    text-decoration: underline;
+    color: #35a4f2;
+    font-weight: 600;
+}
+
+.linkButton:active {
+    transform: scale(1.1);
+}
+
+.linkButton span {
+    margin-right: .5rem;
+}
+
+.whatsapp {
+    fill: #E2E2E2;
+}
+
+@media screen and (min-width: 1024px) {
+    .linkButton:hover {
+        background-color: #35a4f2;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .linkButton {
+        width: 70%;
+        align-self: center;
+
+    }
+}
+
+@media screen and (max-width:576px) {
+    .linkButton {
+        width: 90%;
+    }
+}
