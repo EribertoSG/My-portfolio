@@ -3,7 +3,6 @@ import styles from '@/styles/main.module.css'
 import Navigation from '@/components/organisms/Navigation/Navigation'
 import { Poppins } from 'next/font/google'
 
-
 const poppins = Poppins({ weight: ['400', '700', '800'], subsets: ['latin'] })
 
 export const metadata = {

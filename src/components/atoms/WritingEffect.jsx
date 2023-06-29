@@ -1,5 +1,4 @@
 'use client'
-import { useState } from 'react';
 import { TypeAnimation } from 'react-type-animation'
 
 const WritingEffect = ({ styles }) => {
