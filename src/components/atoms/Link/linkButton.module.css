@@ -1,21 +1,27 @@
 .linkButton {
     background-color: #3094da;
     padding: 1rem 1rem;
-    color: #000;
     border-radius: .25rem;
-    outline: none;
-    border: none;
-    font-size: 18px;
-    font-weight: 500;
-    color: #eaf4fb;
-    width: 60%;
-    transition: background-color .1s ease, transform .1s ease;
-    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
 }
-
+@media screen and (min-width: 768px){
+    .linkButton{
+        width: 60%;
+    }
+}
+@media screen and (min-width: 992px) {
+    .linkButton{
+        width: 50%;
+    } 
+}
+@media screen and (min-width: 1024px) {
+    .linkButton{
+        width: 60%;
+    }
+}
 .a {
     text-decoration: underline;
     color: #35a4f2;

@@ -4,13 +4,13 @@ import { TypeAnimation } from 'react-type-animation'
 const WritingEffect = ({ styles }) => {
     return (
         <div className={styles.nameContainer}>
-            <h1 className={styles.name}>Hi!, I´m
+            <h1 className={styles.name}>¡Hola!, soy
                 <TypeAnimation
                     sequence={[
                         1000,
                         "Eriberto Santos.",
-                        10000,
-                        "a frontend developer.",
+                        1000,
+                        "desarrollador frontend",
                         5000
                     ]}
                     wrapper="span"

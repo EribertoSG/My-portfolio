@@ -8,6 +8,7 @@
     justify-content: center;
     max-width: 90%;
     margin: 0 auto;
+    padding-top: 2rem;
     gap: 1rem;
 
     @media screen and (min-width: 768px) {
@@ -36,15 +37,18 @@
     color: #eaf4fb;
     font-size: 48px;
     margin-bottom: 1rem;
+    line-height: 52px;
 }
 
 .myDescriptionContent p {
     line-height: 24px;
     color: #d3dce2;
 }
-.myDescriptionContent p:first-child span{
+
+.myDescriptionContent p:first-child span {
     color: #35a4f2;
 }
+
 .myDescriptionContent p:last-child {
     margin-top: 1rem;
 }
@@ -89,6 +93,7 @@
         justify-content: flex-start;
     }
 }
+
 @media screen and (min-width: 1200px) {
     .sectionAbout {
         flex-direction: row;
