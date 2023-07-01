@@ -9,8 +9,8 @@ const WritingEffect = ({ styles }) => {
                     sequence={[
                         1000,
                         "Eriberto Santos.",
-                        1000,
-                        "desarrollador frontend",
+                        10000,
+                        "desarrollador frontend.",
                         5000
                     ]}
                     wrapper="span"
