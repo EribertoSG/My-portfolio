@@ -3,9 +3,8 @@
     flex-direction: row;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.5rem 0;
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     @media screen and (min-width: 768px) {
         position: fixed;
         height: calc(100% - 6rem);
@@ -36,8 +35,16 @@
 .instagram,
 .facebook,
 .twitter {
+    margin-right: .5rem;
+    width: 32px;
+    height: 32px;
     fill: #E2E2E2;
     transition: transform 0.50s cubic-bezier(0.075, 0.82, 0.165, 1);
+    @media screen and (min-width: 768px) {
+        width: 24px;
+        height: 24px;
+        margin: 0;
+    }
 }
 
 .github:hover {

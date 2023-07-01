@@ -3,7 +3,7 @@ import styles from '@/components/molecules/Menu/menu.module.css'
 
 const Menu = ({ isActive }) => {
     return (
-        <div className={`${styles.navbarContainer} ${isActive && styles.active}`}>
+        <div className={`${styles.navbarContainer} ${isActive ? styles.active : ''}`}>
             <nav className={styles.navbar}>
                 <Link className={styles.item} href="/projects">Proyectos</Link>
                 <Link className={styles.item} href="/about">Conoceme</Link>

@@ -1,7 +1,7 @@
 .homeBanner {
     min-height: calc(100vh - 3.5rem);
     max-width: 90%;
-    margin: 2rem auto;
+    margin: 2rem auto 0;
     display: flex;
     flex-direction: column;
 }
@@ -24,6 +24,7 @@
 
 .description {
     color: #d3dce2;
+    text-align: center;
 }
 
 @media screen and (min-width: 624px) {
@@ -101,6 +102,7 @@
 
     .description {
         max-width: 100%;
+        text-align: start;
     }
 
     .nameAndDescription {
@@ -178,10 +180,9 @@
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
     justify-items: center;
-    margin: 2rem 0;
+    margin: 2.5rem 0 1rem;
     align-items: center;
 }
-
 
 @keyframes float {
     0% {
@@ -256,9 +257,8 @@
     animation: float 6s ease-in-out infinite;
 }
 
-.circleContainerGit,
 .circleContainerNext {
-    animation: floatTwo 3s ease-in-out infinite;
+    animation: floatTwo 2.5s ease-in-out infinite;
 }
 
 .circleContainerHTML {
