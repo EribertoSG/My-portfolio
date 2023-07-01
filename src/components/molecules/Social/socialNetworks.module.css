@@ -34,7 +34,7 @@
 .linkedin,
 .instagram,
 .facebook,
-.twitter {
+.youtube {
     margin-right: .5rem;
     width: 32px;
     height: 32px;
@@ -67,16 +67,16 @@
 .linkedin:hover,
 .instagram:hover,
 .facebook:hover,
-.twitter:hover {
+.youtube:hover {
     transform: scale(1.5);
 }
 
-.twitter {
+.youtube {
     margin: 0;
 }
 
-.twitter:hover {
-    fill: #1DA1F2;
+.youtube:hover {
+    fill: #FF0000;
 }
 
 .lineOne,
