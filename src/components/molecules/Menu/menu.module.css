@@ -108,6 +108,8 @@
     font-size: 24px;
     border-radius: .25rem;
     align-items: center;
+    color: #eaf4fb;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 624px) {

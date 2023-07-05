@@ -56,6 +56,7 @@
 .cardBody a h3 {
     margin-bottom: .5rem;
     font-size: 1rem;
+    color: #eaf4fb;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -65,7 +66,7 @@
 
 .cardBody p {
     font-size: 0.875rem;
-    color: #dfdfdf;
+    color: #bbc3c9;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;

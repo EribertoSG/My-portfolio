@@ -16,7 +16,7 @@ export default function page({ params }) {
     }
 
     if (result.length !== 0) {
-        return result.map(({ id, src, alt, title, description, functionalities, technologies, download, link }) => (
+        return result.map(({ id, src, alt, title, description, functionalities, technologies, download, externalLink }) => (
             <div className={styles.landing} key={id}>
                 <div className={styles.secondSection}>
                     <div className={styles.imageContainer}>
@@ -45,7 +45,7 @@ export default function page({ params }) {
                         </ul>
                     </div>
                     <div className={styles.button}>
-                        <LinkButton href={link} target='_blank' className={styles.linkButton}>
+                        <LinkButton href={externalLink} target='_blank' className={styles.linkButton}>
                             <span>{download ? 'Descarga la app' : 'Visita la app'}</span>
                             {download ?
                                 <svg xmlns="http://www.w3.org/2000/svg" className={styles.linkExternal} width="24" height="24" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 8zM4 19h16v2H4z"></path></svg>

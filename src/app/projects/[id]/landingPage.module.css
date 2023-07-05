@@ -5,7 +5,6 @@
     padding-top: .5rem;
     color: #bbc3c9;
     gap: 1.5rem;
-
     @media screen and (min-width: 1024px) {
         flex-direction: row-reverse;
         min-height: calc(100vh - 6rem);
@@ -17,16 +16,23 @@
 
 .firstSection {
     width: 90%;
-    margin: 0 auto 1.5rem;
+    margin: 0 auto;
 
     @media screen and (min-width: 1024px) {
         width: 50%;
         margin: 0;
-        padding-top: 3rem;
+        padding: 1rem 0;
     }
 }
 
-.titleAndDescription {
+.titleAndDescription {}
+
+.titleAndDescription p {
+    min-height: 50px;
+}
+
+.titleAndDescription ul {
+    min-height: 150px;
 }
 
 .titleAndDescription h1 {
@@ -39,7 +45,10 @@
     }
 }
 
-.informationContainer {
+.informationContainer {}
+
+.informationContainer ul {
+    min-height: 125px;
 }
 
 .titleAndDescription h1,
@@ -74,12 +83,13 @@
 .secondSection {
     /* min-height: 50%; */
     /* margin: 0 auto; */
-
 }
 
 .imageContainer {
     overflow: hidden;
-    border-radius: .5rem;
+    box-shadow: 1px 3px 10px 0px rgba(0, 0, 0, 0.52);
+    /* -webkit-box-shadow: 1px 3px 10px 0px rgba(0, 0, 0, 0.52); */
+    /* -moz-box-shadow: 1px 3px 10px 0px rgba(0, 0, 0, 0.52); */
 }
 
 .imageContainer img {
@@ -91,6 +101,10 @@
 }
 
 @media screen and (min-width: 1024px) {
+    .imageContainer {
+        border-radius: .5rem;
+    }
+
     .imageContainer img:hover {
         transform: scale(1.02);
     }
@@ -128,6 +142,11 @@
     fill: #eaf4fb;
     margin-left: .5rem;
 }
+@media screen and (min-width: 768px) {
+    .firstSection{
+        padding-left: 2.5rem;
+    }
+}
 
 @media screen and (min-width: 1024px) {
     .secondSection {
@@ -145,12 +164,19 @@
         padding: 1rem 1rem;
         transition: background-color .1s ease;
     }
-    .linkButton:hover{
+
+    .linkButton:hover {
         background-color: #35a4f2;
     }
 
     .linkExternal {
         width: 24px;
         height: 24px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .firstSection{
+        padding-left: 0;
     }
 }
