@@ -1,84 +1,122 @@
 [
     {
         "id": 1,
-        "src": "/projects/my-portfolio.png",
-        "alt": "App web con unsplash",
-        "title": "Aqui va el titulo y si es demasiado largo se tiene que ocultar el resto del titulo y todo lo demas ",
-        "description": "La description de este proyecto es demasiado larga, asi que se necesita que se restriga a 4 lineas. Al final ponerle un especie de ellipsis para que se vea chingona. Es necesario que se vea bien en todo los tamaños.",
-        "functionalities": [],
-        "technologies": [],
-        "download": false,
-        "state": true,
-        "link": "#"
-    },
-    {
-        "id": 2,
-        "src": "/projects/unsplash.png",
-        "alt": "App web con unsplash",
+        "src": "/projects/apiunsplash.png",
+        "alt": "App web con la API de unsplash",
         "title": "App web con la API de Unsplash",
-        "description": "Creación de una aplicación web con Nextjs utilizando la API de Unsplash. Las funcionalidades principales de esta aplicación son:",
+        "description": "Creación de una galería de imágenes utilizando la API de Unsplash. Las funcionalidades principales de esta aplicación son:",
         "functionalities": [
             "Buscar imágenes de acuerdo con las palabras ingresadas en el input.",
             "Descargar imágenes.",
-            "Ver los detalles de las imágenes."
+            "Ver los detalles de las imágenes.",
+            "Etc."
         ],
         "technologies": [
             "Git",
             "GitHub",
             "Nextjs",
-            "API unsplash",
+            "API Unsplash",
             "Entre otros"
         ],
         "download": false,
-        "state": true,
-        "link": "https://apiunsplash.netlify.app/"
+        "available": true,
+        "externalLink": "https://apiunsplash.netlify.app/"
+    },
+    {
+        "id": 2,
+        "src": "/projects/IoT.png",
+        "alt": "App móvil - IOT",
+        "title": "Automatización de puertas con IoT",
+        "description": "Para el desarrollo de este proyecto se empleó el concepto de IoT. El problema que se buscaba resolver era reemplazar las típicas llaves por una app móvil.",
+        "functionalities": [
+            "Crear cuenta e iniciar sesión.",
+            "Sincronización del dispositivo IoT con el móvil.",
+            "Abrir y cerrar la puerta.",
+            "Compartir acceso.",
+            "Bloquear y desbloquear a usuarios.",
+            "Ver el historial de accesos.",
+            "Etc."
+        ],
+        "technologies": [
+            "Git",
+            "GitHub",
+            "Arduino",
+            "React Native",
+            "Firebase",
+            "Entre otros"
+        ],
+        "download": true,
+        "available": false,
+        "externalLink": "#"
     },
     {
         "id": 3,
-        "src": "/projects/unsplash.png",
-        "alt": "App web con unsplash",
-        "title": "Aqui va el titulo y si es demasiado largo se tiene que ocultar el resto del titulo y todo lo demas ",
-        "description": "La description de este proyecto es demasiado larga, asi que se necesita que se restriga a 4 lineas. Al final ponerle un especie de ellipsis para que se vea chingona. Es necesario que se vea bien en todo los tamaños.",
-        "functionalities": [],
-        "technologies": [],
+        "src": "/projects/chat.png",
+        "alt": "App móvil de chat",
+        "title": "App móvil de chat",
+        "description": "Desarrollo de una aplicación de chat con React Native. El objetivo de esta app es que las personas puedan socializar.",
+        "functionalities": [
+            "Iniciar sesión.",
+            "Crear una cuenta.",
+            "Agregar personas a la lista de contactos.",
+            "Chatear con los contactos.",
+            "Etc."
+        ],
+        "technologies": [
+            "Git",
+            "GitHub",
+            "React Native",
+            "Firebase",
+            "Entre otros"
+        ],
         "download": true,
-        "state": false,
-        "link": "#"
+        "available": false,
+        "externalLink": "#"
     },
     {
         "id": 4,
         "src": "/projects/my-portfolio.png",
-        "alt": "App web con unsplash",
-        "title": "aqui va el titulo",
-        "description": "La description",
-        "functionalities": [],
-        "technologies": [],
+        "alt": "Mi portafolio de proyectos",
+        "title": "Mi portafolio de proyectos",
+        "description": "Desarrollo de una app web para poder dar a conocer todos mis proyectos realizados en mi carrera como desarrollador frontend.",
+        "functionalities": [
+            "Esta app web cuenta con diferentes sesiones como: home, proyectos, acerca de, etc.",
+            "Cada proyecto cuenta con su propia información para dar a conocer qué problemas buscaba resolver y las tecnologías empleadas para construirlo.",
+            "Etc."
+        ],
+        "technologies": [
+            "Git",
+            "GitHub",
+            "Nextjs", 
+            "Entre otros"
+        ],
         "download": false,
-        "state": false,
-        "link": "#"
-    },
+        "available": false,
+        "externalLink": "#"
+    }, 
     {
         "id": 5,
-        "src": "/projects/unsplash.png",
-        "alt": "App web con unsplash",
-        "title": "aqui va el titulo",
-        "description": "La description",
-        "functionalities": [],
-        "technologies": [],
+        "src": "/projects/programming.svg",
+        "alt": "- En desarrollo",
+        "title": "App web de lugares ecoturísticos - En desarrollo",
+        "description": "Desarrollo de una app web para dar a conocer los lugares ecoturísticos del estado de Oaxaca.",
+        "functionalities": [
+            "Crear cuenta e iniciar sesión.",
+            "Subir información del lugar (Nombre, localidad, ubicación, etc.)",
+            "Buscar un lugar ecoturístico.",
+            "Ver la información del lugar.",
+            "Etc."
+        ],
+        "technologies": [
+            "Git",
+            "GitHub",
+            "Nextjs",
+            "Firebase",
+            "API Google Maps",
+            "Entre otros"
+        ],
         "download": false,
-        "state": false,
-        "link": "#"
-    },
-    {
-        "id": 6,
-        "src": "/projects/my-portfolio.png",
-        "alt": "App web con unsplash",
-        "title": "aqui va el titulo",
-        "description": "La description",
-        "functionalities": [],
-        "technologies": [],
-        "download": false,
-        "state": false,
-        "link": "#"
+        "available": false,
+        "externalLink": "#"
     }
 ]
