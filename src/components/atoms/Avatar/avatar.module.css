@@ -37,3 +37,15 @@
     width: 100%;
     height: 100%;
 }
+
+.loadingImage {
+    filter: blur(10px);
+    /* Aplicar desenfoque mientras se carga */
+    transition: filter 0.5s;
+    /* Transición suave del desenfoque */
+}
+
+.loadingImage.blur {
+    filter: blur(0);
+    /* Eliminar el desenfoque cuando se carga */
+}
