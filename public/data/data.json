@@ -24,7 +24,7 @@
     },
     {
         "id": 2,
-        "src": "/projects/IoT.png",
+        "src": "/projects/IOT.png",
         "alt": "App móvil - IOT",
         "title": "Automatización de puertas con IoT",
         "description": "Para el desarrollo de este proyecto se empleó el concepto de IoT. El problema que se buscaba resolver era reemplazar las típicas llaves por una app móvil.",
